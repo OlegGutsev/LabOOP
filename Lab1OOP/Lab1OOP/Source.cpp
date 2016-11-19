@@ -1,0 +1,40 @@
+#include<iostream>
+
+using namespace std;
+
+	class MyFirstClass
+	{
+	public:
+			int age;
+			int hight;
+			MyFirstClass(){}
+			MyFirstClass(int aage, int hhight)
+			{
+				age = aage;
+				hight = hhight;
+			}
+
+			void Show()
+			{
+				cout << endl << age << " " << hight << endl;
+				system("pause");
+			}
+	};
+
+
+
+int main()
+{
+	MyFirstClass one(22, 205);
+	MyFirstClass two;
+	one.Show();
+	two.age = 18;
+	two.hight = 199;
+	two.Show();
+
+	two.Show();
+	one.Show();
+	one.Show();
+
+	return 0;
+}
